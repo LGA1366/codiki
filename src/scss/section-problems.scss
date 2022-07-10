@@ -1,0 +1,40 @@
+.problems {
+
+  margin-bottom: 115px;
+
+  &__container {
+    padding: 23px 180px 40px 53px;
+    background-color: var(--white);
+    background-image: url('../img/Frame11.webp');
+    background-repeat: no-repeat;
+    background-position-x: 654px;
+    background-position-y: 131px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 54px;
+    letter-spacing: 0;
+    line-height: 100%;
+  }
+
+  &__list {
+    padding-right: 240px;
+    position: relative;
+    list-style-type: '!';
+  }
+
+  &__item {
+    padding-left: 24px;
+    font-size: 36px;
+    line-height: 100%;
+
+    &::marker {
+      color: red ;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 47px;
+    }
+  }
+}

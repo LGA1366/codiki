@@ -1,0 +1,175 @@
+.needs {
+
+  margin-bottom: 165px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px 65px 49px;
+    overflow: hidden;
+    background-color: var(--raw-sunset);
+  }
+
+  &__title {
+    margin-bottom: 34px;
+    padding: 28px;
+    max-width: 515px;
+    border-radius: 30px;
+    background-color: var(--white);
+    text-align: center;
+    font-size: 48px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 19px 190px;
+    grid-template-areas:
+      "beginner change"
+      "experience experience";
+    align-items: flex-start;
+  }
+
+  &__item:not(:last-child) {
+    padding: 25px 10px 0px 10px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 16px;
+  }
+
+}
+
+.beginner { grid-area: beginner; }
+.change { grid-area: change; }
+.experience { grid-area: experience; }
+
+.needs-card {
+
+  &__container {
+    padding: 18px 90px 0px 46px;
+    background-color: var(--white);
+    border-radius: 16px;
+  }
+
+  &__heading {
+    margin-bottom: 15px;
+    padding-right: 120px;
+    font-size: 24px;
+
+    &--big {
+      padding-right: 0;
+      font-size: 36px;
+      line-height: 159%;
+    }
+  }
+
+  &__list {
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: var(--palatinate-blue);
+  }
+
+  &__item {
+    font-size: 36px;
+    line-height: 36px;
+    color: #fff;
+  }
+}
+
+.needs-icon {
+  margin-right: -60px;
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--cochonnet);
+  border-radius: 56px;
+
+  .img-1 {
+    background-image: url('../img/image\ 3.webp');
+  }
+
+  .img-2 {
+    background-image: url('../img/image\ 5.webp');
+  }
+
+  .img-3 {
+    background-image: url('../img/image\ 6.webp');
+  }
+
+  .img-4 {
+    background-image: url('../img/image\ 4.webp');
+  }
+
+  .img-5 {
+    background-image: url('../img/image\ 2.webp');
+  }
+
+  .img-6 {
+    background-image: url('../img/image\ 7.webp');
+  }
+  &__item:not(:last-child) {
+    margin-right: 20px;
+    width: 27px;
+    height: 27px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__item:last-child {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.bottom-icon {
+  margin-left: 305px;
+  width: 80px;
+  height: 70px;
+  background-color: var(--cochonnet);
+  background-image: url('../img/image\ 8.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 16px;
+
+  &--experience {
+    margin-top: -12px;
+    margin-left: 748px;
+    background-image: url('../img/image13.webp');
+  }
+}
+
+.experience {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.experience-card {
+  overflow: hidden;
+
+  &__content {
+    padding-left: 75px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/Arrow6.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__img {
+    margin-bottom: 9px;
+  }
+}
+
+.star{
+  width: 30px;
+  height: 30px;
+  fill: none;
+
+  &--gold {
+    fill: var(--bitcoin);
+  }
+}

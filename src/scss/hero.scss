@@ -1,0 +1,36 @@
+.section-hero {
+  padding: 35px 78px 0 135px;
+
+  &__title {
+    margin-bottom: 78px;
+    font-family: "Montserrat-ExtraBold";
+    font-size: 54px;
+    line-height: 37px;
+    text-align: center;
+    color: var(--white);
+    letter-spacing: 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__arrow {
+    margin-top: -36px;
+  }
+
+
+}
+
+.swiper {
+  width: 620px;
+  height: 95px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="robots" content="index">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="./fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="main.css">
+  <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="scripts.js"></script>
+  <title>Кодики</title>
+</head>
+
+<body class="page">
+  <div class="container">
+    <header class="header">
+      <a href="#" class="header__logo">
+        <img src="./img/logo.svg" alt="Codiki-logo">
+        Кодики
+      </a>
+      <button class="header__burger burger js-header-burger" type="button" name="burger-btn" aria-label="Открыть меню">
+        <span class="burger__span"></span>
+      </button>
+    </header>
+    <main class="main">
+      <section class="section-hero">
+        <h1 class="section-hero__title section__title">Открываем порталы в крутые компании</h1>
+        <div class="section-hero__container">
+          <img src="./img/section-hero-img.webp" alt="">
+          <svg class="section-hero__arrow" width="61" height="65" viewBox="0 0 61 65" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d_5_44)">
+              <circle cx="30.0817" cy="30.5651" r="29" transform="rotate(-90 30.0817 30.5651)" fill="white"
+                stroke="#18191F" stroke-width="2" />
+              <path d="M30.0817 17.7317L30.0817 43.3984" stroke="#18191F" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M38.2484 35.2317L30.0817 43.3984L21.9151 35.2317" stroke="#18191F" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+              <filter id="filter0_d_5_44" x="0.0817261" y="0.565062" width="60" height="64" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha" />
+                <feOffset dy="4" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0.0941176 0 0 0 0 0.0980392 0 0 0 0 0.121569 0 0 0 1 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_44" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_44" result="shape" />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+      </section>
+      <section class="section assistance">
+        <div class="section__container assistance__container">
+          <h2 class="section__title assistance__title">Мы поможем тебе стать нужным специалистом</h2>
+          <ul class="accordion assistance__list list-reset">
+            <li class="assistance__item">
+              <button class="assistance__heading" aria-label="Развернуть">
+                <span class="assistance__btn"></span>
+                Дадим опытного наставника
+              </button>
+              <p class="assistance__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quam
+                consectetur repudiandae? Voluptatem mollitia, quibusdam voluptatibus in fugit ex saepe perspiciatis
+                optio cum officia blanditiis illum ab molestias neque quod?
+                Ducimus consequatur fuga officiis vero earum, nisi assumenda minus voluptatibus. Ducimus reiciendis
+                porro minima alias optio sequi voluptates impedit dolor repellendus pariatur excepturi dicta incidunt
+                debitis perspiciatis molestias, placeat explicabo.
+                Quibusdam explicabo cumque et sapiente at veniam vel eaque dignissimos enim ea. Libero ut amet itaque.
+                Perspiciatis, reprehenderit incidunt vero optio facere ea, placeat labore aperiam provident eligendi
+                architecto soluta.</p>
+            </li>
+            <li class="assistance__item">
+              <button class="assistance__heading" aria-label="Развернуть">
+                <span class="assistance__btn"></span>
+                Дадим опытного наставника
+              </button>
+              <p class="assistance__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quam
+                consectetur repudiandae? Voluptatem mollitia, quibusdam voluptatibus in fugit ex saepe perspiciatis
+                optio cum officia blanditiis illum ab molestias neque quod?
+                Ducimus consequatur fuga officiis vero earum, nisi assumenda minus voluptatibus. Ducimus reiciendis
+                porro minima alias optio sequi voluptates impedit dolor repellendus pariatur excepturi dicta incidunt
+                debitis perspiciatis molestias, placeat explicabo.
+                Quibusdam explicabo cumque et sapiente at veniam vel eaque dignissimos enim ea. Libero ut amet itaque.
+                Perspiciatis, reprehenderit incidunt vero optio facere ea, placeat labore aperiam provident eligendi
+                architecto soluta.</p>
+            </li>
+            <li class="assistance__item">
+              <button class="assistance__heading" aria-label="Развернуть">
+                <span class="assistance__btn"></span>
+                Будем курировать твои первые шаги в компанию
+              </button>
+              <p class="assistance__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quam
+                consectetur repudiandae? Voluptatem mollitia, quibusdam voluptatibus in fugit ex saepe perspiciatis
+                optio cum officia blanditiis illum ab molestias neque quod?
+                Ducimus consequatur fuga officiis vero earum, nisi assumenda minus voluptatibus. Ducimus reiciendis
+                porro minima alias optio sequi voluptates impedit dolor repellendus pariatur excepturi dicta incidunt
+                debitis perspiciatis molestias, placeat explicabo.
+                Quibusdam explicabo cumque et sapiente at veniam vel eaque dignissimos enim ea. Libero ut amet itaque.
+                Perspiciatis, reprehenderit incidunt vero optio facere ea, placeat labore aperiam provident eligendi
+                architecto soluta.</p>
+            </li>
+            <li class="assistance__item">
+              <button class="assistance__heading" aria-label="Развернуть">
+                <span class="assistance__btn"></span>
+                Подключим к реальному проекту
+              </button>
+              <p class="assistance__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quam
+                consectetur repudiandae? Voluptatem mollitia, quibusdam voluptatibus in fugit ex saepe perspiciatis
+                optio cum officia blanditiis illum ab molestias neque quod?
+                Ducimus consequatur fuga officiis vero earum, nisi assumenda minus voluptatibus. Ducimus reiciendis
+                porro minima alias optio sequi voluptates impedit dolor repellendus pariatur excepturi dicta incidunt
+                debitis perspiciatis molestias, placeat explicabo.
+                Quibusdam explicabo cumque et sapiente at veniam vel eaque dignissimos enim ea. Libero ut amet itaque.
+                Perspiciatis, reprehenderit incidunt vero optio facere ea, placeat labore aperiam provident eligendi
+                architecto soluta.</p>
+            </li>
+            <li class="assistance__item">
+              <button class="assistance__heading" aria-label="Развернуть">
+                <span class="assistance__btn"></span>
+                Подберем компанию, в которой ты сможешь начать карьеру
+              </button>
+              <p class="assistance__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quam
+                consectetur repudiandae? Voluptatem mollitia, quibusdam voluptatibus in fugit ex saepe perspiciatis
+                optio cum officia blanditiis illum ab molestias neque quod?
+                Ducimus consequatur fuga officiis vero earum, nisi assumenda minus voluptatibus. Ducimus reiciendis
+                porro minima alias optio sequi voluptates impedit dolor repellendus pariatur excepturi dicta incidunt
+                debitis perspiciatis molestias, placeat explicabo.
+                Quibusdam explicabo cumque et sapiente at veniam vel eaque dignissimos enim ea. Libero ut amet itaque.
+                Perspiciatis, reprehenderit incidunt vero optio facere ea, placeat labore aperiam provident eligendi
+                architecto soluta.</p>
+            </li>
+            <li class="assistance__item">
+              <button class="assistance__heading" aria-label="Развернуть">
+                <span class="assistance__btn"></span>
+                Обозначим нужные стэк
+              </button>
+              <p class="assistance__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quam
+                consectetur repudiandae? Voluptatem mollitia, quibusdam voluptatibus in fugit ex saepe perspiciatis
+                optio cum officia blanditiis illum ab molestias neque quod?
+                Ducimus consequatur fuga officiis vero earum, nisi assumenda minus voluptatibus. Ducimus reiciendis
+                porro minima alias optio sequi voluptates impedit dolor repellendus pariatur excepturi dicta incidunt
+                debitis perspiciatis molestias, placeat explicabo.
+                Quibusdam explicabo cumque et sapiente at veniam vel eaque dignissimos enim ea. Libero ut amet itaque.
+                Perspiciatis, reprehenderit incidunt vero optio facere ea, placeat labore aperiam provident eligendi
+                architecto soluta.</p>
+            </li>
+          </ul>
+          <div class="swiper-container">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <svg width="55" height="53.83" viewBox="0 0 256 244" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid">
+                    <path
+                      d="M177.381 169.733c9.447-.978 16.614-9.122 16.288-18.896-.325-9.773-8.47-17.592-18.243-17.592h-.651c-10.1.326-17.918 8.796-17.592 18.895.326 4.887 2.28 9.122 5.212 12.054-11.076 21.828-28.016 37.791-53.426 51.148-17.266 9.122-35.183 12.38-53.1 10.1-14.66-1.955-26.062-8.47-33.23-19.222-10.424-15.963-11.401-33.23-2.605-50.496 6.19-12.38 15.962-21.502 22.152-26.063-1.303-4.235-3.258-11.402-4.235-16.614-47.237 34.207-42.35 80.468-28.016 102.295 10.75 16.29 32.577 26.389 56.684 26.389 6.515 0 13.03-.652 19.546-2.28 41.699-8.145 73.299-32.905 91.216-69.718zm57.336-40.397c-24.759-28.995-61.245-44.958-102.944-44.958h-5.212c-2.932-5.864-9.122-9.774-15.963-9.774h-.652C99.848 74.93 92.03 83.4 92.355 93.5c.326 9.773 8.47 17.592 18.243 17.592h.651c7.167-.326 13.357-4.887 15.963-11.077h5.864c24.759 0 48.214 7.167 69.39 21.176 16.288 10.751 28.016 24.76 34.531 41.7 5.538 13.683 5.212 27.04-.652 38.443-9.121 17.266-24.432 26.714-44.63 26.714-13.031 0-25.41-3.91-31.926-6.842-3.583 3.258-10.099 8.47-14.66 11.729 14.009 6.515 28.343 10.099 42.025 10.099 31.274 0 54.404-17.267 63.2-34.533 9.447-18.896 8.795-51.474-15.637-79.165zM69.225 175.27c.326 9.774 8.47 17.592 18.243 17.592h.652c10.099-.325 17.917-8.796 17.591-18.895-.325-9.774-8.47-17.592-18.243-17.592h-.651c-.652 0-1.63 0-2.28.325-13.357-22.153-18.895-46.26-16.94-72.323 1.302-19.547 7.818-36.488 19.22-50.497 9.447-12.054 27.69-17.918 40.07-18.243 34.531-.652 49.19 42.351 50.168 59.618 4.235.977 11.402 3.258 16.289 4.887C189.434 27.366 156.857 0 125.584 0c-29.32 0-56.359 21.176-67.11 52.451-14.985 41.7-5.212 81.771 13.031 113.372-1.628 2.28-2.606 5.864-2.28 9.448z"
+                      fill="#764ABC" />
+                  </svg>
+                </div>
+                <div class="swiper-slide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" fill-rule="evenodd">
+                    <g transform="matrix(.06928 0 0 .06928 7.367398 13.505331)" fill="none">
+                      <circle r="50.167" cy="237.628" cx="269.529" fill="#00d8ff" />
+                      <g stroke="#00d8ff" stroke-width="24">
+                        <path
+                          d="M269.53 135.628c67.356 0 129.928 9.665 177.107 25.907 56.844 19.57 91.794 49.233 91.794 76.093 0 27.99-37.04 59.503-98.083 79.728-46.15 15.29-106.88 23.272-170.818 23.272-65.554 0-127.63-7.492-174.3-23.44-59.046-20.182-94.61-52.103-94.61-79.56 0-26.642 33.37-56.076 89.415-75.616 47.355-16.51 111.472-26.384 179.486-26.384z" />
+                        <path
+                          d="M180.736 186.922c33.65-58.348 73.28-107.724 110.92-140.48C337.006 6.976 380.163-8.48 403.43 4.937c24.248 13.983 33.042 61.814 20.067 124.796-9.8 47.618-33.234 104.212-65.176 159.6-32.75 56.788-70.25 106.82-107.377 139.272-46.98 41.068-92.4 55.93-116.185 42.213-23.08-13.3-31.906-56.92-20.834-115.233 9.355-49.27 32.832-109.745 66.8-168.664z" />
+                        <path
+                          d="M180.82 289.482C147.075 231.2 124.1 172.195 114.51 123.227c-11.544-59-3.382-104.11 19.864-117.566 24.224-14.024 70.055 2.244 118.14 44.94 36.356 32.28 73.688 80.837 105.723 136.173 32.844 56.733 57.46 114.21 67.036 162.582 12.117 61.213 2.31 107.984-21.453 121.74-23.057 13.348-65.25-.784-110.24-39.5-38.013-32.71-78.682-83.253-112.76-142.115z" />
+                      </g>
+                    </g>
+                    <path
+                      d="M64.62 38.848l-4.26-6.436c2.153-.19 4.093-1.75 4.093-4.6 0-2.9-2.058-4.756-4.945-4.756h-6.34v15.78h1.964v-6.27h3.147l4.022 6.27zm-5.347-7.997h-4.14v-6.033h4.14c1.87 0 3.147 1.23 3.147 3.005s-1.278 3.03-3.147 3.03zm12.658 8.28c1.87 0 3.407-.615 4.543-1.75l-.852-1.16c-.9.923-2.224 1.443-3.525 1.443-2.46 0-3.975-1.798-4.117-3.95h9.25v-.45c0-3.43-2.035-6.128-5.49-6.128-3.265 0-5.63 2.674-5.63 5.986 0 3.573 2.437 6 5.82 6zm3.55-6.72h-7.5c.095-1.75 1.3-3.81 3.738-3.81 2.603 0 3.738 2.106 3.762 3.81zm13.534 6.436v-7.855c0-2.768-2.01-3.857-4.424-3.857-1.87 0-3.336.615-4.566 1.893l.828 1.23c1.017-1.088 2.13-1.585 3.502-1.585 1.656 0 2.887.875 2.887 2.413v2.058c-.923-1.065-2.224-1.562-3.786-1.562-1.94 0-4 1.207-4 3.762 0 2.484 2.058 3.786 4 3.786 1.538 0 2.84-.544 3.786-1.585v1.3zm-4.92-.994c-1.656 0-2.816-1.04-2.816-2.484 0-1.467 1.16-2.508 2.816-2.508 1.254 0 2.46.473 3.147 1.42v2.153c-.686.946-1.893 1.42-3.147 1.42zm13.5 1.278c2.082 0 3.312-.852 4.188-1.987l-1.183-1.088c-.757 1.017-1.727 1.49-2.9 1.49-2.437 0-3.95-1.893-3.95-4.424s1.514-4.4 3.95-4.4c1.183 0 2.153.45 2.9 1.49l1.183-1.088c-.875-1.136-2.106-1.987-4.188-1.987-3.407 0-5.702 2.603-5.702 5.986 0 3.407 2.295 6 5.702 6zm9.56 0c1.04 0 1.68-.308 2.13-.733l-.52-1.325c-.237.26-.7.473-1.207.473-.78 0-1.16-.615-1.16-1.467v-7.098h2.32V27.42h-2.32v-3.123h-1.775v3.123h-1.893v1.562h1.893v7.477c0 1.704.852 2.674 2.532 2.674z"
+                      fill="#00d8ff" />
+                  </svg>
+                </div>
+                <div class="swiper-slide">
+                  <svg width="56px" height="56px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                    <g>
+                      <path
+                        d="M255.637396,127.683191 C255.637396,198.196551 198.47207,255.363378 127.954205,255.363378 C57.4348387,255.363378 0.27026393,198.196551 0.27026393,127.683191 C0.27026393,57.1653255 57.4355894,0 127.954205,0 C198.472821,0 255.637396,57.1653255 255.637396,127.683191 L255.637396,127.683191 Z"
+                        fill="#DD4814"></path>
+                      <path
+                        d="M41.1334194,110.63254 C31.7139707,110.63254 24.0827683,118.264493 24.0827683,127.683191 C24.0827683,137.097384 31.7139707,144.728587 41.1334194,144.728587 C50.5476129,144.728587 58.1788152,137.097384 58.1788152,127.683191 C58.1788152,118.264493 50.5476129,110.63254 41.1334194,110.63254 L41.1334194,110.63254 Z M162.848282,188.111202 C154.694569,192.820551 151.898839,203.240727 156.608938,211.389935 C161.313032,219.543648 171.733208,222.338628 179.886921,217.629279 C188.039883,212.925185 190.835613,202.505009 186.126264,194.350545 C181.42217,186.202088 170.995988,183.407109 162.848282,188.111202 L162.848282,188.111202 Z M78.1618299,127.683191 C78.1618299,110.836739 86.5295015,95.9534545 99.3332551,86.9409032 L86.8703343,66.0667683 C71.9555191,76.0365044 60.8581818,91.271132 56.2464282,109.113806 C61.6276833,113.504845 65.0720469,120.189372 65.0720469,127.68244 C65.0720469,135.171003 61.6276833,141.855531 56.2464282,146.246569 C60.852176,164.094499 71.9495132,179.329877 86.8703343,189.299613 L99.3332551,168.420223 C86.5295015,159.412927 78.1618299,144.530393 78.1618299,127.683191 L78.1618299,127.683191 Z M127.954205,77.8855601 C153.967109,77.8855601 175.30895,97.8302874 177.549138,123.265877 L201.839859,122.907777 C200.644692,104.129689 192.441431,87.2719765 179.836622,74.875871 C173.354792,77.3247625 165.86773,76.9501466 159.396411,73.2197537 C152.91383,69.4788504 148.849361,63.1681877 147.738276,56.3177478 C141.438123,54.5790499 134.807648,53.6271202 127.952704,53.6271202 C116.168446,53.6271202 105.026815,56.3950733 95.1344047,61.2913548 L106.979472,82.5175836 C113.351695,79.5521877 120.460387,77.8855601 127.954205,77.8855601 L127.954205,77.8855601 Z M127.954205,177.475566 C120.460387,177.475566 113.351695,175.808188 106.980223,172.843543 L95.1351554,194.069021 C105.027566,198.971308 116.169196,201.740012 127.954205,201.740012 C134.80915,201.740012 141.439625,200.787331 147.739026,199.043378 C148.850111,192.192938 152.916082,185.888282 159.397161,182.140622 C165.872985,178.404223 173.355543,178.036364 179.837372,180.485255 C192.442182,168.08915 200.645443,151.231437 201.84061,132.453349 L177.543883,132.095249 C175.30895,157.537595 153.967859,177.475566 127.954205,177.475566 L127.954205,177.475566 Z M162.842276,67.2446686 C170.995988,71.9532669 181.416915,69.1642933 186.121009,61.0105806 C190.830358,52.856868 188.041384,42.4359413 179.886921,37.7258416 C171.733208,33.0217478 161.313032,35.8167273 156.602182,43.9704399 C151.898839,52.1196481 154.693818,62.5405748 162.842276,67.2446686 L162.842276,67.2446686 Z"
+                        fill="#FFFFFF"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div class="swiper-slide">
+                  <svg width="512px" height="108px" viewBox="0 0 512 108" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    preserveAspectRatio="xMidYMid">
+                    <g fill="#009900">
+                      <path
+                        d="M96.1743134,107.150604 C93.284719,107.150604 90.43958,106.025885 88.3146168,103.896476 L22.5430036,38.1204178 L22.5430036,96.0367798 C22.5430036,102.176056 17.5684558,107.150604 11.4291792,107.150604 C5.29434812,107.150604 0.315354768,102.176056 0.315354768,96.0367798 L0.315354768,11.2872001 C0.315354768,6.78832398 3.02712794,2.73844634 7.17925274,1.01802632 C11.326932,-0.706839234 16.1103221,0.244504138 19.2888759,3.42750346 L85.060489,69.203562 L85.060489,11.2872001 C85.060489,5.14792348 90.0350368,0.173375661 96.1743134,0.173375661 C102.31359,0.173375661 107.288138,5.14792348 107.288138,11.2872001 L107.288138,96.0367798 C107.288138,100.53121 104.576365,104.585534 100.42424,106.305954 C99.0505712,106.874981 97.6102196,107.150604 96.1743134,107.150604">
+                      </path>
+                      <path
+                        d="M147.640212,0.280068376 L144.586133,5.97923756 L120.967033,48.905273 L117.912954,54.3243738 L120.967033,59.7390292 L144.586133,101.278059 L147.778023,106.972783 L209.602006,106.972783 L212.656084,100.722368 L230.300392,65.15813 L238.21788,49.0430846 L220.29795,49.0430846 L175.14915,49.180896 C169.276605,49.1008764 163.875286,54.4221756 163.875286,60.2947204 C163.875286,66.1672652 169.276605,71.49301 175.14915,71.4085448 L202.37802,71.2707334 L195.709725,84.7451342 L160.701178,84.7451342 L143.332493,54.182117 L160.83899,22.5077172 L198.079193,22.5077172 L206.761312,40.3254006 L229.131218,40.3254006 L215.029998,6.53492878 L211.971474,0.280068376 L147.640212,0.280068376">
+                      </path>
+                      <path
+                        d="M260.232144,0.142256953 C254.4085,0.21338543 249.180558,5.57469434 249.256132,11.3938928 L249.256132,40.3565194 L271.48378,40.3565194 L271.48378,11.3938928 C271.554908,5.48133822 266.140254,0.0666829466 260.232144,0.142256953">
+                      </path>
+                      <path
+                        d="M295.85862,107.36399 C294.42716,107.36399 292.982362,107.088367 291.608694,106.519339 C287.456568,104.798919 284.749242,100.744596 284.749242,96.2501652 L284.749242,11.5005855 C284.749242,5.36130892 289.723788,0.38676109 295.863066,0.38676109 C302.002342,0.38676109 306.97689,5.36130892 306.97689,11.5005855 L306.97689,69.4169474 L372.748504,3.64088888 C375.918166,0.466780626 380.692664,-0.493453806 384.858126,1.23141175 C389.01025,2.95183178 391.717578,7.00615494 391.717578,11.5005855 L391.717578,96.2501652 C391.717578,102.389442 386.74303,107.36399 380.603754,107.36399 C374.464478,107.36399 369.48993,102.389442 369.48993,96.2501652 L369.48993,38.3338032 L303.718316,104.109862 C301.597798,106.234825 298.75266,107.36399 295.85862,107.36399">
+                      </path>
+                      <path
+                        d="M474.044344,53.7909104 L508.61723,19.3425001 C512.964958,15.0125541 512.978294,7.97528042 508.643902,3.62310676 C504.313956,-0.724621354 497.281128,-0.733512414 492.928956,3.5964336 L458.302724,38.1026358 L423.676492,3.5964336 C419.324318,-0.737957944 412.29149,-0.724621354 407.961544,3.62310676 C403.627152,7.97528042 403.64049,15.0125541 407.983772,19.3425001 L442.556658,53.7909104 L408.08602,88.141519 C403.733846,92.4759104 403.724954,99.5087386 408.059346,103.856467 C410.228764,106.039222 413.07835,107.128377 415.93238,107.128377 C418.768628,107.128377 421.604876,106.048113 423.774294,103.88314 L458.302724,69.479185 L492.826708,103.88314 C495.000572,106.048113 497.832374,107.128377 500.673068,107.128377 C503.527098,107.128377 506.372238,106.039222 508.546102,103.856467 C512.876048,99.5087386 512.867156,92.4759104 508.519428,88.141519 L474.044344,53.7909104">
+                      </path>
+                      <path
+                        d="M260.232144,107.048357 C254.4085,106.977229 249.180558,101.61592 249.256132,95.7967212 L249.256132,49.274252 L271.48378,49.274252 L271.48378,95.7967212 C271.554908,101.70483 266.140254,107.119486 260.232144,107.048357">
+                      </path>
+                    </g>
+                  </svg>
+
+                </div>
+                <div class="swiper-slide">
+                  <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 0 120 59.999999"
+                    version="1.1" id="svg62" sodipodi:docname="postman-ar21.svg" width="120" height="60"
+                    inkscape:version="0.92.3 (2405546, 2018-03-11)">
+                    <metadata id="metadata68">
+                      <rdf:RDF>
+                        <cc:Work rdf:about="">
+                          <dc:format>image/svg+xml</dc:format>
+                          <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                          <dc:title>logo-white</dc:title>
+                        </cc:Work>
+                      </rdf:RDF>
+                    </metadata>
+                    <defs id="defs66" />
+                    <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10"
+                      gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2"
+                      inkscape:window-width="1920" inkscape:window-height="1001" id="namedview64" showgrid="false"
+                      inkscape:zoom="4.9409707" inkscape:cx="9.6134957" inkscape:cy="28.446151" inkscape:window-x="-9"
+                      inkscape:window-y="-9" inkscape:window-maximized="1" inkscape:current-layer="svg62" />
+                    <title id="title2">logo-white</title>
+                    <g id="g1038" transform="matrix(1.2951512,0,0,1.2951512,-22.279008,-8.854536)">
+                      <path inkscape:connector-curvature="0" id="path4" style="fill:#ffffff"
+                        d="m 48.023717,33.591681 v -5.35 a 0.24,0.24 0 0 1 0.07,-0.16 0.31,0.31 0 0 1 0.2,-0.07 h 1.5 a 1.81,1.81 0 0 1 1.23,0.41 1.67,1.67 0 0 1 0.46,1.27 v 0.07 a 1.69,1.69 0 0 1 -0.47,1.31 1.82,1.82 0 0 1 -1.24,0.42 h -1.08 v 2.1 a 0.18,0.18 0 0 1 -0.1,0.17 0.44,0.44 0 0 1 -0.47,0 0.19,0.19 0 0 1 -0.1,-0.17 z m 0.67,-2.62 h 1.08 a 1,1 0 0 0 0.77,-0.28 1.2,1.2 0 0 0 0.28,-0.85 v -0.1 a 1.18,1.18 0 0 0 -0.28,-0.84 1,1 0 0 0 -0.77,-0.28 h -1.08 z" />
+                      <path inkscape:connector-curvature="0" id="path6" style="fill:#ffffff"
+                        d="m 53.813717,32.141681 v -2.4 a 1.69,1.69 0 0 1 0.47,-1.31 2.06,2.06 0 0 1 2.49,0 1.65,1.65 0 0 1 0.47,1.31 v 2.4 a 1.66,1.66 0 0 1 -0.47,1.32 2.06,2.06 0 0 1 -2.49,0 1.7,1.7 0 0 1 -0.47,-1.32 z m 0.67,0 c 0,0.75 0.35,1.13 1,1.13 a 1,1 0 0 0 0.78,-0.28 1.15,1.15 0 0 0 0.27,-0.85 v -2.4 a 1.12,1.12 0 0 0 -0.27,-0.84 1,1 0 0 0 -0.78,-0.28 c -0.69,0 -1,0.37 -1,1.12 z" />
+                      <path inkscape:connector-curvature="0" id="path8" style="fill:#ffffff"
+                        d="m 59.643717,33.011681 a 0.38,0.38 0 0 1 0.09,-0.25 0.25,0.25 0 0 1 0.19,-0.12 0.35,0.35 0 0 1 0.19,0.1 l 0.23,0.22 a 1,1 0 0 0 0.37,0.23 1.7,1.7 0 0 0 0.59,0.1 1.25,1.25 0 0 0 0.81,-0.26 0.9,0.9 0 0 0 0.29,-0.73 0.93,0.93 0 0 0 -0.27,-0.71 1.73,1.73 0 0 0 -0.65,-0.42 l -0.84,-0.31 a 1.67,1.67 0 0 1 -0.65,-0.5 1.31,1.31 0 0 1 -0.27,-0.87 1.55,1.55 0 0 1 0.16,-0.73 1.1,1.1 0 0 1 0.42,-0.46 1.89,1.89 0 0 1 0.55,-0.23 2.57,2.57 0 0 1 0.62,-0.08 3,3 0 0 1 0.94,0.15 c 0.3,0.09 0.45,0.23 0.45,0.38 a 0.41,0.41 0 0 1 -0.08,0.24 0.23,0.23 0 0 1 -0.21,0.13 2.13,2.13 0 0 1 -0.35,-0.14 1.92,1.92 0 0 0 -0.74,-0.15 1.39,1.39 0 0 0 -0.78,0.19 0.71,0.71 0 0 0 -0.3,0.63 0.76,0.76 0 0 0 0.26,0.6 2.12,2.12 0 0 0 0.66,0.36 c 0.26,0.09 0.51,0.2 0.78,0.31 a 1.62,1.62 0 0 1 0.91,1.54 1.58,1.58 0 0 1 -0.47,1.24 1.89,1.89 0 0 1 -1.27,0.42 2.24,2.24 0 0 1 -1.19,-0.3 c -0.31,-0.19 -0.44,-0.39 -0.44,-0.58 z" />
+                      <path inkscape:connector-curvature="0" id="path10" style="fill:#ffffff"
+                        d="m 65.033717,28.311681 a 0.31,0.31 0 0 1 0.07,-0.21 0.2,0.2 0 0 1 0.17,-0.09 h 3.24 a 0.21,0.21 0 0 1 0.18,0.09 0.37,0.37 0 0 1 0.06,0.21 0.39,0.39 0 0 1 -0.06,0.21 0.22,0.22 0 0 1 -0.18,0.1 h -1.27 v 5 a 0.19,0.19 0 0 1 -0.1,0.17 0.44,0.44 0 0 1 -0.47,0 0.19,0.19 0 0 1 -0.1,-0.17 v -5 h -1.29 a 0.2,0.2 0 0 1 -0.17,-0.09 0.37,0.37 0 0 1 -0.08,-0.22 z" />
+                      <path inkscape:connector-curvature="0" id="path12" style="fill:#ffffff"
+                        d="m 71.023717,33.591681 v -5.24 a 0.29,0.29 0 0 1 0.24,-0.34 h 0.1 c 0.21,0 0.39,0.14 0.53,0.42 l 1.25,2.4 1.26,-2.4 c 0.15,-0.28 0.33,-0.42 0.53,-0.42 a 0.29,0.29 0 0 1 0.33,0.24 v 0 a 0.11,0.11 0 0 1 0,0.08 v 5.24 a 0.19,0.19 0 0 1 -0.09,0.18 0.49,0.49 0 0 1 -0.47,0 0.18,0.18 0 0 1 -0.1,-0.18 v -4.16 l -1.2,2.28 a 0.29,0.29 0 0 1 -0.27,0.19 0.26,0.26 0 0 1 -0.24,-0.19 l -1.25,-2.32 v 4.22 a 0.17,0.17 0 0 1 -0.09,0.17 0.49,0.49 0 0 1 -0.23,0.08 0.39,0.39 0 0 1 -0.23,-0.07 0.17,0.17 0 0 1 -0.07,-0.18 z" />
+                      <path inkscape:connector-curvature="0" id="path14" style="fill:#ffffff"
+                        d="m 77.553717,33.551681 a 0.14,0.14 0 0 1 0,-0.06 l 1.62,-5.24 c 0.05,-0.16 0.18,-0.24 0.41,-0.24 0.23,0 0.36,0.08 0.41,0.24 l 1.65,5.26 v 0 a 0.26,0.26 0 0 1 -0.13,0.2 0.6,0.6 0 0 1 -0.29,0.08 0.22,0.22 0 0 1 -0.24,-0.15 l -0.34,-1.12 h -2.1 l -0.35,1.17 a 0.21,0.21 0 0 1 -0.24,0.15 0.53,0.53 0 0 1 -0.27,-0.08 0.23,0.23 0 0 1 -0.13,-0.21 z m 1.15,-1.59 h 1.78 l -0.89,-3 z" />
+                      <path inkscape:connector-curvature="0" id="path16" style="fill:#ffffff"
+                        d="m 83.953717,33.591681 v -5.35 c 0,-0.15 0.11,-0.23 0.33,-0.23 a 0.42,0.42 0 0 1 0.28,0.1 1,1 0 0 1 0.23,0.32 l 2,3.88 v -4.07 a 0.19,0.19 0 0 1 0.1,-0.17 0.49,0.49 0 0 1 0.47,0 0.19,0.19 0 0 1 0.1,0.17 v 5.35 a 0.19,0.19 0 0 1 -0.1,0.17 0.39,0.39 0 0 1 -0.23,0.07 0.49,0.49 0 0 1 -0.43,-0.31 l -2.07,-4 v 4.07 a 0.17,0.17 0 0 1 -0.09,0.17 0.44,0.44 0 0 1 -0.47,0 0.16,0.16 0 0 1 -0.12,-0.17 z" />
+                      <g transform="translate(0,-0.94636033)" id="g997">
+                        <path d="m 42.233717,23.611681 a 12,12 0 1 0 -2.16,16.83 12,12 0 0 0 2.16,-16.83 z"
+                          style="fill:#ff6c37" id="path18" inkscape:connector-curvature="0" />
+                        <path d="m 36.783717,26.591681 -5.06,5.1 -1.43,-1.47 c 4.98,-4.98 5.48,-4.53 6.49,-3.63 z"
+                          style="fill:#ffffff" id="path20" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 31.723717,31.831681 v 0 a 0.18,0.18 0 0 1 -0.12,-0.05 l -1.44,-1.44 a 0.18,0.18 0 0 1 0,-0.25 c 4.91,-4.91 5.58,-4.68 6.74,-3.63 a 0.16,0.16 0 0 1 0.06,0.13 0.14,0.14 0 0 1 -0.05,0.13 l -5.06,5.06 a 0.19,0.19 0 0 1 -0.13,0.05 z m -1.18,-1.61 1.18,1.18 4.8,-4.8 a 1.08,1.08 0 0 0 -1.42,-0.24 c -0.87,0.39 -2.27,1.58 -4.56,3.86 z"
+                          style="fill:#ff6c37" id="path22" inkscape:connector-curvature="0" />
+                        <path d="m 33.173717,33.101681 -1.38,-1.41 5.06,-5 c 1.36,1.33 -0.66,3.55 -3.68,6.41 z"
+                          style="fill:#ffffff" id="path24" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 33.173717,33.281681 v 0 a 0.21,0.21 0 0 1 -0.12,-0.05 l -1.41,-1.38 a 0.21,0.21 0 0 1 0,-0.16 0.19,0.19 0 0 1 0,-0.13 l 5.06,-5.06 a 0.19,0.19 0 0 1 0.26,0 1.55,1.55 0 0 1 0.5,1.19 c 0,1.35 -1.54,3.05 -4.16,5.53 a 0.21,0.21 0 0 1 -0.13,0.06 z m -1.12,-1.59 1.13,1.13 c 2,-1.89 3.91,-3.84 3.92,-5.16 a 1.14,1.14 0 0 0 -0.26,-0.77 z"
+                          style="fill:#ff6c37" id="path26" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 30.333717,30.251681 1,1 a 0.06,0.06 0 0 1 0,0.09 l -2.11,0.45 a 0.2,0.2 0 0 1 -0.18,-0.34 l 1.23,-1.22 c 0,0 0.04,0 0.06,0.02 z"
+                          style="fill:#ffffff" id="path28" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 29.173717,31.991681 a 0.39,0.39 0 0 1 -0.33,-0.19 0.38,0.38 0 0 1 0.07,-0.45 l 1.22,-1.23 a 0.24,0.24 0 0 1 0.32,0 l 1,1 a 0.22,0.22 0 0 1 0.06,0.22 0.23,0.23 0 0 1 -0.17,0.16 l -2.11,0.45 z m 1.12,-1.52 -1.13,1.13 c 0,0 0,0 0,0 0,0 0,0 0,0 l 1.87,-0.4 z m 0.09,-0.09 z"
+                          style="fill:#ff6c37" id="path30" inkscape:connector-curvature="0" />
+                        <path d="m 39.473717,23.781681 a 1.94,1.94 0 1 0 -0.35,3.06 l -1.36,-1.36 z"
+                          style="fill:#ffffff" id="path32" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 38.123717,27.301681 a 2.12,2.12 0 0 1 -1.48,-3.61 2.14,2.14 0 0 1 3,0 0.17,0.17 0 0 1 0,0.26 l -1.62,1.53 1.23,1.21 a 0.17,0.17 0 0 1 0.05,0.15 0.18,0.18 0 0 1 -0.08,0.13 2.17,2.17 0 0 1 -1.1,0.33 z m 0,-3.88 a 1.76,1.76 0 0 0 -1.24,3 1.75,1.75 0 0 0 1.94,0.37 l -1.18,-1.18 a 0.16,0.16 0 0 1 -0.06,-0.13 0.16,0.16 0 0 1 0.06,-0.12 l 1.56,-1.57 a 1.79,1.79 0 0 0 -1.08,-0.37 z"
+                          style="fill:#ff6c37" id="path34" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 39.503717,23.811681 v 0 l -1.71,1.7 1.36,1.36 a 2.07,2.07 0 0 0 0.38,-0.28 2,2 0 0 0 -0.03,-2.78 z"
+                          style="fill:#ffffff" id="path36" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 39.123717,27.021681 a 0.15,0.15 0 0 1 -0.12,-0.05 l -1.36,-1.36 a 0.16,0.16 0 0 1 -0.06,-0.13 0.16,0.16 0 0 1 0.06,-0.12 l 1.7,-1.67 a 0.18,0.18 0 0 1 0.3,0 v 0 a 2.1,2.1 0 0 1 0,3 1.82,1.82 0 0 1 -0.4,0.32 0.16,0.16 0 0 1 -0.12,0.01 z m -1.1,-1.54 1.13,1.13 a 1.92,1.92 0 0 0 0.22,-0.18 1.77,1.77 0 0 0 0.52,-1.25 1.72,1.72 0 0 0 -0.43,-1.14 z"
+                          style="fill:#ff6c37" id="path38" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 36.993717,26.801681 v 0 a 0.73,0.73 0 0 0 -1,0 l -4.53,4.52 0.75,0.76 4.79,-4.2 a 0.74,0.74 0 0 0 -0.01,-1.08 z"
+                          style="fill:#ffffff" id="path40" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 32.173717,32.261681 a 0.18,0.18 0 0 1 -0.12,-0.05 l -0.76,-0.76 a 0.18,0.18 0 0 1 0,-0.25 l 4.53,-4.51 a 0.92,0.92 0 0 1 1.3,0 v 0 a 0.92,0.92 0 0 1 0.27,0.68 0.94,0.94 0 0 1 -0.31,0.66 l -4.79,4.2 a 0.17,0.17 0 0 1 -0.12,0.03 z m -0.53,-0.94 0.5,0.51 4.7,-4.09 a 0.55,0.55 0 0 0 0.19,-0.4 0.53,0.53 0 0 0 -0.17,-0.41 0.56,0.56 0 0 0 -0.79,0 z"
+                          style="fill:#ff6c37" id="path42" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 27.953717,36.471681 a 0.1,0.1 0 0 0 0,0.12 l 0.2,0.87 a 0.25,0.25 0 0 1 -0.41,0.23 l -1.37,-1.32 4.27,-4.3 h 1.48 l 1,1 a 22.69,22.69 0 0 1 -5.17,3.4 z"
+                          style="fill:#ffffff" id="path44" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 27.863717,37.941681 a 0.43,0.43 0 0 1 -0.3,-0.13 l -1.31,-1.31 a 0.16,0.16 0 0 1 -0.06,-0.13 0.16,0.16 0 0 1 0.06,-0.12 l 4.3,-4.31 a 0.17,0.17 0 0 1 0.09,-0.05 h 1.49 a 0.18,0.18 0 0 1 0.12,0 l 1,1 a 0.16,0.16 0 0 1 0.05,0.14 0.16,0.16 0 0 1 -0.06,0.13 l -0.08,0.07 a 24.5,24.5 0 0 1 -5.13,3.29 l 0.19,0.81 a 0.43,0.43 0 0 1 -0.41,0.53 z m -1.22,-1.57 1.18,1.19 a 0.06,0.06 0 0 0 0.08,0 0.06,0.06 0 0 0 0,-0.07 l -0.2,-0.87 a 0.28,0.28 0 0 1 0.15,-0.32 v 0 a 24.59,24.59 0 0 0 5,-3.22 l -0.82,-0.82 h -1.34 z m 1.44,0.18 z"
+                          style="fill:#ff6c37" id="path46" inkscape:connector-curvature="0" />
+                        <path d="m 25.343717,37.401681 1,-1 1.54,1.54 -2.45,-0.17 a 0.2,0.2 0 0 1 -0.09,-0.37 z"
+                          style="fill:#ffffff" id="path48" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 27.913717,38.091681 v 0 l -2.44,-0.17 a 0.38,0.38 0 0 1 -0.24,-0.64 v 0 l 1,-1 a 0.18,0.18 0 0 1 0.25,0 l 1.53,1.53 a 0.17,0.17 0 0 1 0,0.2 0.19,0.19 0 0 1 -0.1,0.08 z m -2.44,-0.56 2,0.13 -1.1,-1.03 z"
+                          style="fill:#ff6c37" id="path50" inkscape:connector-curvature="0" />
+                        <polygon points="11.62,13.5 9.6,13.81 10.77,12.65 " style="fill:#ffffff" id="polygon52"
+                          transform="translate(20.643717,18.691681)" />
+                        <path
+                          d="m 30.243717,32.691681 a 0.17,0.17 0 0 1 -0.16,-0.1 0.17,0.17 0 0 1 0,-0.2 l 1.16,-1.17 a 0.19,0.19 0 0 1 0.26,0 l 0.85,0.85 a 0.17,0.17 0 0 1 0,0.18 0.17,0.17 0 0 1 -0.14,0.13 l -2,0.31 z m 1.17,-1.09 -0.65,0.65 1.12,-0.17 z"
+                          style="fill:#ff6c37" id="path54" inkscape:connector-curvature="0" />
+                        <path d="m 32.263717,32.191681 -1.41,0.18 a 0.18,0.18 0 0 1 -0.17,-0.3 l 0.73,-0.73 z"
+                          style="fill:#ffffff" id="path56" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 30.813717,32.561681 a 0.37,0.37 0 0 1 -0.32,-0.19 0.36,0.36 0 0 1 0.06,-0.43 l 0.73,-0.73 a 0.19,0.19 0 0 1 0.26,0 l 0.85,0.85 a 0.18,0.18 0 0 1 -0.11,0.31 l -1.4,0.18 z m 0,-0.37 v 0 l 1.06,-0.13 -0.47,-0.47 -0.6,0.6 z"
+                          style="fill:#ff6c37" id="path58" inkscape:connector-curvature="0" />
+                        <path
+                          d="m 39.513717,24.961681 a 0.15,0.15 0 0 0 -0.19,-0.06 0.14,0.14 0 0 0 -0.06,0.19 0.43,0.43 0 0 1 -0.05,0.45 0.13,0.13 0 0 0 0,0.19 0.11,0.11 0 0 0 0.08,0 0.13,0.13 0 0 0 0.13,-0.04 0.69,0.69 0 0 0 0.09,-0.73 z"
+                          style="fill:#ff6c37" id="path60" inkscape:connector-curvature="0" />
+                      </g>
+                      <g style="fill:#ff6c37;fill-opacity:1" id="g46"
+                        transform="matrix(0.35821397,0,0,0.35821397,33.230012,-16.871323)">
+                        <g style="fill:#ff6c37;fill-opacity:1" id="g44">
+                          <path class="st6"
+                            d="m 151.8,125.7 c -1.2,2.5 -2.2,4.8 -3.3,7.1 -0.3,0.6 -0.5,1.4 -1.1,1.4 -0.8,0 -0.9,-0.8 -1.2,-1.5 -0.9,-2 -1.8,-4 -2.7,-5.9 -0.2,-0.3 -0.2,-0.9 -0.6,-0.8 -0.5,0.1 -0.4,0.7 -0.4,1.1 0,4 0,8 0,12.1 0,0.6 0,1.2 -0.1,1.8 -0.1,0.6 -0.5,1 -1.1,1 -0.6,-0.1 -0.8,-0.5 -0.9,-1 0,-0.4 0,-0.8 0,-1.2 0,-5.9 0,-11.7 0,-17.6 0,-0.8 -0.2,-1.9 0.7,-2.2 1,-0.3 1.6,0.5 2,1.4 1.1,2.3 2,4.6 3.1,6.8 0.3,0.6 0.4,1.7 1.2,1.8 0.9,0 1,-1.2 1.3,-1.8 1.1,-2.2 2,-4.4 3.1,-6.6 0.4,-0.9 0.9,-1.8 2,-1.6 1.1,0.3 0.8,1.4 0.8,2.3 0,5.8 0,11.6 0,17.4 0,0.9 0.3,2.3 -1,2.3 -1.4,0 -1.1,-1.4 -1.1,-2.4 0,-3.8 0,-7.6 0,-11.5 -0.1,-0.8 0.1,-1.6 -0.7,-2.4 z"
+                            id="path30-9" inkscape:connector-curvature="0" style="fill:#ff6c37;fill-opacity:1" />
+                          <path class="st6"
+                            d="m 194.7,126.2 c -0.6,0.6 -0.4,1.4 -0.4,2.1 0,4 0,7.9 0,11.9 0,0.7 0.2,1.8 -0.8,1.8 -1.1,0.1 -1.1,-1 -1.1,-1.8 0,-6.1 0,-12.2 0,-18.4 0,-0.7 -0.1,-1.6 0.7,-1.8 0.9,-0.3 1.4,0.4 1.8,1.2 1.6,3.6 3.3,7.2 4.9,10.9 0.3,0.8 0.7,1.5 1,2.3 0.2,0.4 0.2,1 0.8,0.8 0.5,-0.2 0.4,-0.8 0.4,-1.2 0,-3.9 0,-7.8 0,-11.7 0,-0.5 0,-0.9 0.1,-1.4 0.1,-0.7 0.5,-1 1.1,-1 0.6,0.1 0.8,0.6 0.8,1.2 0,1.5 0,3 0,4.5 0,4.7 0,9.3 0,14 0,0.8 0.3,1.9 -0.7,2.2 -1.1,0.4 -1.5,-0.7 -1.9,-1.6 -1.9,-4.1 -3.7,-8.3 -5.6,-12.4 -0.3,-0.6 -0.4,-1.3 -1.1,-1.6 z"
+                            id="path32-1" inkscape:connector-curvature="0" style="fill:#ff6c37;fill-opacity:1" />
+                          <path class="st6"
+                            d="m 81.2,130.9 c -0.1,2.2 0.1,4.3 -0.2,6.5 -0.5,3.1 -2.2,4.6 -5.3,4.6 -3.3,0 -5.2,-1.4 -5.6,-4.5 -0.5,-4.5 -0.6,-9.1 0,-13.6 0.4,-2.9 2.4,-4.3 5.4,-4.3 3,0 4.9,1.5 5.4,4.3 0.5,2.4 0.2,4.7 0.3,7 z m -2,0 c 0,-1.7 0.1,-3.4 0,-5.1 -0.1,-2.6 -1.5,-4.1 -3.8,-4 -2.2,0 -3.5,1.4 -3.6,4 -0.1,3.4 -0.1,6.9 0,10.3 0.1,2.6 1.4,4 3.6,4.1 2.3,0 3.7,-1.4 3.8,-4.1 0.1,-1.7 0,-3.4 0,-5.2 z"
+                            id="path34-7" inkscape:connector-curvature="0" style="fill:#ff6c37;fill-opacity:1" />
+                          <path class="st6"
+                            d="m 180,140.6 c 0,0.7 -0.1,1.2 -0.7,1.3 -0.5,0.1 -0.9,0 -1.1,-0.6 -0.1,-0.4 -0.3,-0.9 -0.4,-1.3 -0.9,-3.1 -0.9,-3.1 -3.6,-3.1 -0.3,0 -0.6,0 -0.9,0 -3.4,0 -3.4,0 -4.6,3.6 -0.2,0.7 -0.3,1.7 -1.3,1.4 -1,-0.4 -0.7,-1.4 -0.5,-2.2 1.6,-6 3.2,-12.1 4.9,-18.1 0.3,-0.9 0.4,-2.2 1.7,-2.1 1.1,0.1 1.3,1.2 1.5,2.1 1.5,5.7 3.1,11.4 4.6,17.2 0.2,0.6 0.3,1.2 0.4,1.8 z m -6.7,-5.6 c 0.3,0 0.7,0 1,0 2.2,0 2.3,-0.1 1.6,-2.6 -0.6,-2.4 -1.2,-4.8 -1.9,-7.1 -0.1,-0.5 0,-1.2 -0.6,-1.2 -0.6,0 -0.7,0.7 -0.8,1.3 -0.5,2 -1,4 -1.6,6 -1,3.6 -0.9,3.6 2.3,3.6 z"
+                            id="path36-4" inkscape:connector-curvature="0" style="fill:#ff6c37;fill-opacity:1" />
+                          <path class="st6"
+                            d="m 46,130.9 c 0,-3.1 0,-6.2 0,-9.3 0,-1.5 0.5,-2 1.7,-2 1.1,0 2.3,0 3.4,0 4.6,0.1 6.3,2.2 6.2,7.5 -0.1,3.6 -1.9,5.7 -5,5.9 -0.9,0 -1.7,0.1 -2.6,0 -1.4,-0.1 -1.9,0.6 -1.8,2.1 0.1,1.8 0,3.6 0,5.3 0,0.7 -0.1,1.5 -1,1.5 -0.9,0 -0.9,-0.8 -0.9,-1.6 0,-3.1 0,-6.3 0,-9.4 z m 4.7,0.3 c 2.9,0 4,-0.7 4.5,-2.8 0.5,-2.1 0.5,-4.1 -1,-5.7 -1.6,-1.6 -3.7,-0.9 -5.6,-0.8 -0.7,0 -0.7,0.9 -0.7,1.6 0,1.5 0,3 0,4.5 0,3.2 0,3.2 2.8,3.2 z"
+                            id="path38-1" inkscape:connector-curvature="0" style="fill:#ff6c37;fill-opacity:1" />
+                          <path class="st6"
+                            d="m 99,142.2 c -2.1,0 -3.8,-0.4 -5.1,-2 -0.4,-0.5 -0.9,-1.2 -0.3,-1.9 0.5,-0.6 1.1,-0.2 1.5,0.3 1.2,1.3 2.5,1.7 4.1,1.6 1.5,-0.1 2.6,-0.8 3.2,-2.5 0.6,-1.7 0.2,-3.3 -0.9,-4.5 -1.1,-1.2 -2.5,-1.7 -3.9,-2.4 -2,-0.9 -3.5,-2.2 -3.7,-4.9 -0.3,-3.6 1.3,-5.6 4.8,-6.3 1.5,-0.3 2.9,0.1 4.2,0.6 0.7,0.2 1.3,0.8 1,1.7 -0.3,1 -1,0.6 -1.6,0.3 -1.3,-0.7 -2.7,-0.7 -4,-0.5 -1.1,0.2 -2.1,0.9 -2.3,2.3 -0.2,1.4 0,2.6 1,3.5 1.3,1.1 2.8,1.5 4.2,2.2 2.2,1.1 3.4,3 3.4,5.8 0,2.6 -0.6,4.6 -2.8,5.9 -1,0.7 -2.1,0.6 -2.8,0.8 z"
+                            id="path40-0" inkscape:connector-curvature="0" style="fill:#ff6c37;fill-opacity:1" />
+                          <path class="st6"
+                            d="m 120.9,131.7 c 0,-2.6 -0.1,-5.1 0,-7.7 0.1,-1.9 -0.6,-2.5 -2.1,-2.3 -0.6,0.1 -1.3,0 -1.9,0 -0.6,0 -1,-0.3 -1,-1.1 0,-0.6 0.4,-1 0.9,-1 3.4,0 6.8,0 10.2,0 0.5,0 0.9,0.3 0.9,0.9 0,0.7 -0.4,1.1 -1,1.1 -0.7,0 -1.5,0.1 -2.2,0 -1.4,-0.1 -1.8,0.6 -1.8,2.1 0,4.9 0,9.9 0,14.8 0,0.5 0,1.1 0,1.6 0,0.8 -0.1,1.7 -1,1.7 -1,0 -1,-0.9 -1,-1.7 0,-2.4 0,-4.7 0,-7.1 0,-0.4 0,-0.8 0,-1.3 z"
+                            id="path42-6" inkscape:connector-curvature="0" style="fill:#ff6c37;fill-opacity:1" />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section faq">
+        <h2 class="faq__title">FAQ</h2>
+      </section>
+      <section class="section needs">
+        <div class="section__container needs__container">
+          <h2 class="section__title needs__title">Кому это нужно?</h2>
+          <ul class="list-reset needs__list">
+            <li class="needs__item needs-card beginner">
+              <h3 class="needs-card__heading">1. Для начинающих карьеру</h3>
+              <ul class="list-reset needs-card__list">
+                <li class="needs-card__item">Программистов</li>
+                <li class="needs-card__item">Художников</li>
+                <li class="needs-card__item">Модельеров</li>
+                <li class="needs-card__item">Архитекторов</li>
+                <li class="needs-card__item">Музыкантов</li>
+              </ul>
+              <ul class="list-reset needs-icon">
+                <li class="needs-icon__item img-1"></li>
+                <li class="needs-icon__item img-2"></li>
+                <li class="needs-icon__item img-3"></li>
+                <li class="needs-icon__item img-4"></li>
+                <li class="needs-icon__item img-5"></li>
+                <li class="needs-icon__item img-6"></li>
+              </ul>
+            </li>
+            <li class="needs__item needs-card change">
+              <h3 class="needs-card__heading">2. Для смены профессии</h3>
+              <ul class="list-reset needs-card__list ta-center">
+                <li class="needs-card__item">Программистов</li>
+                <li class="needs-card__item">Художников</li>
+                <li class="needs-card__item">Модельеров</li>
+                <li class="needs-card__item">Архитекторов</li>
+                <li class="needs-card__item">Музыкантов</li>
+              </ul>
+              <div class="bottom-icon"></div>
+            </li>
+            <li class="needs__item needs-card experience">
+              <div class="needs-card__container experience-card">
+                <h3 class="needs-card__heading needs-card__heading--big">3. Для нового профессионального опыта</h3>
+                <div class="experience-card__content">
+                  <div class="experience-card__one">
+                    <img src="./img/image11.webp" class="experience-card__img" alt="" >
+                    <div class="stars-container">
+                      <svg class="star star--gold">
+                        <use xlink:href="./img/sprite.svg#star-mini"></use>
+                      </svg>
+                      <svg class="star">
+                        <use xlink:href="./img/sprite.svg#star-mini"></use>
+                      </svg>
+                      <svg class="star">
+                        <use xlink:href="./img/sprite.svg#star-mini"></use>
+                      </svg>
+                      <svg class="star">
+                        <use xlink:href="./img/sprite.svg#star-mini"></use>
+                      </svg>
+                      <svg class="star">
+                        <use xlink:href="./img/sprite.svg#star-mini"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="experience-card__two">
+                    <img src="./img/image12.webp" class="experience-card__img" alt="" >
+                    <div class="stars-container">
+                      <svg class="star star--gold">
+                        <use xlink:href="./img/sprite.svg#star-mini"></use>
+                      </svg>
+                      <svg class="star star--gold">
+                        <use xlink:href="./img/sprite.svg#star-mini"></use>
+                      </svg>
+                      <svg class="star star--gold">
+                        <use xlink:href="./img/sprite.svg#star-mini"></use>
+                      </svg>
+                      <svg class="star star--gold">
+                        <use xlink:href="./img/sprite.svg#star-mini"></use>
+                      </svg>
+                      <svg class="star star--gold">
+                        <use xlink:href="./img/sprite.svg#star-mini"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-icon bottom-icon--experience"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section problems">
+        <div class="section__container problems__container">
+          <h2 class="section__title problems__title">Проблемы, о которых <span class="red">вы</span> знаете лучше нас
+          </h2>
+          <ul class="list-reset problems__list">
+            <li class="problems__item">Отсутствие практики в реальных проектах
+            </li>
+            <li class="problems__item">Низкая заинтересованность в студентах со стороны компаний</li>
+            <li class="problems__item">Отсутствие синхронизации учебного плана и реальных потребностей рынка</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section ecosystem">
+        <h2 class="section__title ecosystem__title">Это экосистема</h2>
+        <ul class="list-reset ecosystem__list">
+          <li class="ecosystem__item">
+            <img src="./img/ecosystem-codoki.webp" alt="" class="ecosystem__logo ecosystem__logo--codoki">
+            <h3 class="ecosystem__heading">Кодики - cервис по <br />подбору<br /> талантливого специалиста.</h3>
+            <a href="#" class="ecosystem__link">Узнать подробнее</a>
+          </li>
+          <li class="ecosystem__item">
+            <img src="./img/ecosystem-terka.webp" alt="" class="ecosystem__logo ecosystem__logo--terka">
+            <h3 class="ecosystem__heading">Тёрка - нетворкинг.<br /> Поиск<br /> единомышленников.</h3>
+            <a href="#" class="ecosystem__link">Узнать подробнее</a>
+          </li>
+          <li class="ecosystem__item">
+            <img src="./img/ecosystem-labado.webp" alt="" class="ecosystem__logo ecosystem__logo--labado">
+            <h3 class="ecosystem__heading">Лабаду - биржа<br /> креативных<br /> индустрий.</h3>
+            <a href="#" class="ecosystem__link">Узнать подробнее</a>
+          </li>
+        </ul>
+      </section>
+      <section class="section result">
+        <h2 class="section__title result__title">Что в итоге?</h2>
+        <p class="result__descr">После заполнения анкеты и выполнения тестовых заданий вас ждет:</p>
+        <ul class="list-reset result__list">
+          <li class="result__item result__item--company">Стажировка в компании</li>
+          <li class="result__item result__item--startup">Стажировка в стартапе</li>
+          <li class="result__item result__item--mentor">Практика у наставника</li>
+        </ul>
+      </section>
+      <section class="sign-up">
+        <button class="sign-up__btn">Записаться</button>
+        <div class="modal-wrapper">
+          <div class="modal-content">
+            <button class="close-btn"></button>
+            <h2 class="sign-up__title">Запись</h2>
+            <form class="sign-up__form" action="https://jsonplaceholder.typicode.com/posts" enctype="application/x-www-form-urlencoded" method="post">
+              <fieldset class="sign-up__fieldset">
+                <legend class="sign-up__legend">Введите данные</legend>
+                <input class="sign-up__input" type="text" name="user-name" placeholder="Имя" aria-label="Введите Ваше Имя" required>
+                <input class="sign-up__input" type="text" name="user-surname" placeholder="Фамилия" aria-label="Введите Вашу Фамилию" required>
+                <input class="sign-up__input" type="text" placeholder="Дата рождения" name="user-birthday" onfocus="(this.type='date')" onblur="(this.type='text')" aria-label="Введите дату рождения" required>
+                <select class="select sign-up__institute" name="institute-select" required>
+                  <option value="">Учебное заведение</option>
+                  <option value="КГТУ">КГТУ</option>
+                  <option value="КИТИС">КИТИС</option>
+                  <option value="БГА">БГА</option>
+                  <option value="БФУ">БФУ</option>
+                </select>
+                <input class="sign-up__input" type="text" name="user-workplace" placeholder="Место работы" aria-label="Введите место работы" required>
+                <select class="select sign-up__specialization" name="specialization-select" required>
+                  <option value="">Специальность</option>
+                  <option value="Программист">Программист</option>
+                  <option value="Художник">Художник</option>
+                  <option value="Модельер">Модельер</option>
+                  <option value="Архитектор">Архитектор</option>
+                  <option value="Музыкант">Музыкант</option>
+                </select>
+                <textarea class="sign-up__textarea" name="activity" placeholder="Чем хотите заниматься"  cols="30" rows="10" required></textarea>
+              </fieldset>
+              <button class="sign-up__btn btn-submit" type="submit">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__left">
+        <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48Z"
+            fill="url(#paint0_linear)" />
+          <path
+            d="M8.93822 25.174C11.7438 23.6286 14.8756 22.3388 17.8018 21.0424C22.836 18.919 27.8902 16.8324 32.9954 14.8898C33.9887 14.5588 35.7734 14.2351 35.9484 15.7071C35.8526 17.7907 35.4584 19.8621 35.188 21.9335C34.5017 26.4887 33.7085 31.0283 32.935 35.5685C32.6685 37.0808 30.774 37.8637 29.5618 36.8959C26.6486 34.9281 23.713 32.9795 20.837 30.9661C19.8949 30.0088 20.7685 28.6341 21.6099 27.9505C24.0093 25.5859 26.5539 23.5769 28.8279 21.0901C29.4413 19.6088 27.6289 20.8572 27.0311 21.2397C23.7463 23.5033 20.5419 25.9051 17.0787 27.8945C15.3097 28.8683 13.2479 28.0361 11.4797 27.4927C9.89428 26.8363 7.57106 26.175 8.93806 25.1741L8.93822 25.174Z"
+            fill="white" />
+          <defs>
+            <linearGradient id="paint0_linear" x1="18.0028" y1="2.0016" x2="6.0028" y2="30"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#37AEE2" />
+              <stop offset="1" stop-color="#1E96C8" />
+            </linearGradient>
+          </defs>
+        </svg>
+        @panfound
+      </div>
+      <div class="footer__center">
+        <p>вся шерсть переработана в пиксели, ни<br/> одно животное в процессе не<br/> пострадало</p>
+        <small>&copy; 2022</small>
+      </div>
+      <div class="footer__right">
+
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+.sign-up {
+  padding: 58px 0px 40px 576px;
+
+  &__btn {
+    padding: 16px 98px;
+    background-color: var(--bitcoin);
+    border-radius: 16px;
+    box-shadow: 0px 4px 0px #18191f;
+    color: var(--black);
+    font-size: 21px;
+    font-family: "Montserrat-Bold";
+    line-height: 28px;
+    cursor: pointer;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-family: 'Montserrat-ExtraBold';
+    font-size: 36px;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+
+  &__legend {
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    padding: 0 0 0 16px;
+    margin-bottom: 25px;
+    width: 540px;
+    height: 56px;
+    border: 3px solid var(--river-styx);
+    border-radius: 16px;
+  }
+
+  &__textarea {
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 540px;
+    height: 162px;
+    border: 2px solid var(--river-styx);
+    border-radius: 16px;
+  }
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: opacity .5s ease-in-out;
+}
+
+.modal-wrapper.show-modal {
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity .5s ease-in-out;
+  z-index: 100;
+}
+
+.modal-content {
+  margin: 0 auto;
+  padding-top: 70px;
+  position: relative;
+  max-width: 1500px;
+  height: 100vh;
+  background-color: var(--white);
+}
+
+.close-btn {
+  position: absolute;
+  top: 45px;
+  right: 54px;
+  background-image: url('./img/close-btn.svg');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 52px;
+  height: 52px;
+  border: none;
+  cursor: pointer;
+}
+
+.select {
+  padding: 0 0 0 10px;
+  margin-bottom: 30px;
+  width: 540px;
+  height: 56px;
+  border: 3px solid var(--river-styx);
+  border-radius: 16px;
+}

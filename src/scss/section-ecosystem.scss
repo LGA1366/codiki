@@ -1,0 +1,72 @@
+.ecosystem {
+
+  margin-bottom: 52px;
+
+  &__title {
+    padding: 15px;
+    max-width: 447px;
+    margin: 0 auto;
+    margin-bottom: 53px;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+    font-size: 48px;
+  }
+
+  &__list {
+    display: flex;
+    padding-left: 106px;
+  }
+
+  &__item {
+    padding: 18px 10px;
+    display: flex;
+    flex-basis: 369px;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 35px -20px 4px rgba(0, 0, 0, 0.25);
+
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+
+    &:not(:first-child) > a{
+      margin-top: auto;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 85px;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  &__logo {
+
+    &--codoki {
+      margin-bottom: 7px;
+    }
+
+    &--terka {
+      margin-bottom: 142px;
+    }
+
+    &--labado {
+      margin-bottom: 136px;
+    }
+  }
+
+  &__link {
+    padding: 16px 52px;
+    background-color: var(--amazonite);
+    border-radius: 16px;
+    box-shadow: 0px 4px 0px #18191f;
+    color: var(--white);
+    font-size: 21px;
+    font-family: 'Montserrat-Bold';
+    line-height: 28px;
+  }
+}

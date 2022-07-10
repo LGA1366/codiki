@@ -1,0 +1,65 @@
+.result {
+  margin-bottom: 0;
+  padding-left: 130px;
+  padding-bottom: 36px;
+  background-image: url('./img/Frame5.webp');
+  background-repeat: no-repeat;
+  background-position-x: 904px;
+  background-position-y: 36px;
+
+  &__title {
+    padding: 15px;
+    max-width: 441px;
+    margin-bottom: 29px;
+    border-radius: 23px;
+    background-color: white;
+    text-align: center;
+    font-size: 48px;
+  }
+
+  &__descr {
+    margin-left: 168px;
+    margin-bottom: 70px;
+    padding: 19px 27px;
+    max-width: 514px;
+    border-radius: 16px;
+    background-color: white;
+    font-family: 'Montserrat-Bold';
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding: 240px 10px 103px 10px;
+    flex-basis: 343px;
+    border-radius: 16px;
+    background-color: var(--white);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 60px;
+    font-family: 'Montserrat-Bold';
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+
+    &--company {
+      background-image: url('../img/image14.webp');
+    }
+
+    &--startup {
+      background-image: url('../img/image15.webp');
+    }
+
+    &--mentor {
+      background-image: url('../img/image16.webp');
+    }
+
+    &:not(:last-child) {
+      margin-right: 75px;
+    }
+  }
+}

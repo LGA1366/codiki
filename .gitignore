@@ -1,0 +1,10 @@
+node_modules
+.fig
+/pixel-perfect-img
+/dev
+/build
+/dist
+.idea
+package-lock.json
+pixelperfect_img/
+src/pixel-perfect-img

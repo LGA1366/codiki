@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 63px 56px 16px 18px;
+  background-color: rgb(0, 0, 0, 0.1);
+  background-image: url('./img/footer-bckgrnd.webp');
+  background-repeat: no-repeat;
+  background-position: center -85px;
+
+  &__left {
+
+    display: flex;
+    align-items: center;
+
+    & svg {
+      margin-right: 10px;
+    }
+  }
+
+  &__center {
+    text-align: center;
+
+    & p {
+      margin-bottom: 25px;
+    }
+
+    & small {
+      font-size: 16px;
+    }
+  }
+
+  &__right {
+    width: 155px;
+    height: 75px;
+    background-image: url('./img/kitis.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
